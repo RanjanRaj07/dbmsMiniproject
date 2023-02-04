@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: white;
+}
+.main-post {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap: 2px;
+    padding: 10px;
+    background-color: rgb(226, 225, 225);
+  }
+
+ .post-box{
+    width: 100%;
+  }
+  .post-box img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  .post-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .post-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #e2336b;
+  }
+.formblock{
+    padding:5px;
+    display: flex;
+    flex-direction: row;
+    row-gap: 5px;
+}
+
+.data{
+    margin-left: 10px;
+    text-emphasis-color: green;
+    padding : 20px;
+}
+.data h4 {
+    color: rgb(2, 132, 11);
+}
+.formblock form{
+    width: 35%;
+    border: solid 2px black;
+    border-radius: 5px;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    padding: 10px;
+    background-color: rgb(244, 245, 244);
+}
+.submit{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.alert{
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  box-shadow: 4px;
+  background-color: grey;
+  margin: 0;
+  animation: alert;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-delay: 0.90s;
+  animation-fill-mode: forwards;
+}
+@keyframes alert {
+  100%{
+    background-color: darkseagreen;
+  }
+}
+.alert img{
+  height: 10%;
+  width: 20%;
+  position: relative;
+  animation-name: entrycar;
+  animation-duration: 8s;
+  animation-iteration-count: 1;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+@keyframes entrycar {
+  0%{
+    left: 0px;
+    opacity: 100%;
+  }
+  100%{
+    left: 100%;
+    opacity: 100%;
+  }
+}
+
+.alert .text{
+  position: relative;
+  animation-name: welcom;
+  animation-duration: 3.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+@keyframes welcom {
+  0%{
+    left: 0%;
+    opacity: 10%;
+  }
+  10%{
+    opacity: 30%;
+  }
+  50%{
+    opacity: 70%;
+  }
+  100%{
+    left: 20%;
+    opacity: 100%;
+  }
+}
+.formblock img{
+  position: relative;
+  left: 100%;
+  height: 200px;
+  width: 230px;
+  z-index: -3;
+  animation-name: exitcar;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-delay: 3.7s;
+  animation-fill-mode: forwards;
+}
+@keyframes exitcar {
+  0%{
+    left: 100%;
+    opacity: 100%;
+  }
+  100%{
+    left: 0px;
+    opacity: 0%;
+  }
+}
